@@ -1,0 +1,21 @@
+<form [formGroup]="registerForm" (ngSubmit)="onRegisterSubmit()">
+  <input type="email" formControlName="email" placeholder="Email">
+  <input type="password" formControlName="password" placeholder="Password">
+  <button type="submit">Register</button>
+</form>
+
+<form [formGroup]="loginForm" (ngSubmit)="onLoginSubmit()">
+  <input type="email" formControlName="email" placeholder="Email">
+  <input type="password" formControlName="password" placeholder="Password">
+  <button type="submit">Login</button>
+</form>
+
+<form [formGroup]="saleForm" (ngSubmit)="onSaleSubmit()">
+  <input type="text" formControlName="brand" placeholder="Brand">
+  <input type="text" formControlName="model" placeholder="Model">
+  <input type="number" formControlName="price" placeholder="Price">
+  <input type="number" formControlName="year" placeholder="Year">
+  <input type="number" formControlName="mileage" placeholder="Mileage">
+  <input type="text" formControlName="garage" placeholder="Garage">
+  <button type="submit">Create Sale</button>
+</form>

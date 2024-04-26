@@ -10,7 +10,7 @@ export interface Iuser {
   providedIn: 'root'
 })
 export class AuthService {
-  private url = 'https://express-hosting-nvy0.onrender.com';
+  private url = 'https://express-hosting-1.onrender.com';
 
   constructor(private http: HttpClient) { }
 
